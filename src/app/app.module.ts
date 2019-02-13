@@ -1,9 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http'
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService }  from './in-memory-data-service.service';
+
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { RegistrationModule } from './registration/registration.module';
+import { UserDashboardModule } from './user-dashboard/user-dashboard.module';
 
 @NgModule({
   declarations: [
@@ -11,8 +16,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RegistrationModule,
+    UserDashboardModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }),
   ],
   providers: [],
   bootstrap: [AppComponent]
