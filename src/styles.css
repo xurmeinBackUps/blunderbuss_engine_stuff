@@ -6,7 +6,8 @@ html, body{
 
 body{ 
     margin: 0; 
-    font-family: "Roboto Slab", sans-serif; 
+    font-family: "Roboto Slab", sans-serif;
+    color: whitesmoke;
 }
 
 h1, h2, h3{

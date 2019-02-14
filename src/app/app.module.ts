@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http'
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService }  from './in-memory-data.service';
 import { 
   FormsModule, 
   ReactiveFormsModule 
@@ -11,12 +10,15 @@ import {
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { InMemoryDataService }  from './db/in-memory-data.service';
 import { RegistrationModule } from './registration/registration.module';
 import { UserDashboardModule } from './user-dashboard/user-dashboard.module';
+import { Page404Component } from './page404/page404.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,
