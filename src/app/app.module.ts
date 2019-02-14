@@ -3,7 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http'
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService }  from './in-memory-data-service.service';
+import { InMemoryDataService }  from './in-memory-data.service';
+import { 
+  FormsModule, 
+  ReactiveFormsModule 
+} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -17,11 +21,12 @@ import { UserDashboardModule } from './user-dashboard/user-dashboard.module';
   imports: [
     BrowserModule,
     HttpClientModule,
-    
     AppRoutingModule,
     BrowserAnimationsModule,
     RegistrationModule,
     UserDashboardModule,
+    FormsModule, 
+    ReactiveFormsModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }),
   ],
