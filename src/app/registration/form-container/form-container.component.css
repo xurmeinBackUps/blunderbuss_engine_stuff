@@ -1,0 +1,7 @@
+.register-forms-frame{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    border: 0.5em inset #9C27B0;
+    border-radius: 1em;
+}

@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { 
   MatCardModule,
-  MatSlideToggleModule,
   MatButtonModule,
   MatFormFieldModule,
-  MatInputModule
+  MatInputModule,
+  MatToolbarModule
 } from '@angular/material';
 
 import { SplashComponent } from './splash/splash.component';
@@ -19,10 +19,10 @@ import { LoginComponent } from './login/login.component';
   imports: [
     CommonModule,
     MatCardModule,
-    MatSlideToggleModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatToolbarModule
   ],
   declarations: [
     SplashComponent, 
