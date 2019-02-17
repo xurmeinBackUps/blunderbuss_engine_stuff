@@ -6,6 +6,9 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
   declarations: [UserDashboardComponent],
   imports: [
     CommonModule
+  ], 
+  exports: [
+    UserDashboardComponent
   ]
 })
 export class UserDashboardModule { }
