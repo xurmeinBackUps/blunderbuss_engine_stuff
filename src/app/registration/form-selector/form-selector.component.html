@@ -1,6 +1,8 @@
-<button mat-raised-button class="signup-btn" color="accent">
-  Sign Up
-</button>
-<button mat-raised-button class="login-btn" color="primary">
-  Login
-</button>
+<mat-tab-group>
+  <mat-tab label="New User Signup">
+    <app-sign-up></app-sign-up>
+  </mat-tab>
+  <mat-tab label="Returning User Login">
+    <app-login></app-login>
+  </mat-tab>
+</mat-tab-group>

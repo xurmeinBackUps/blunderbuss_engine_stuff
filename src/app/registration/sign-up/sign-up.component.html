@@ -1,3 +1,22 @@
-<p>
-  sign-up works!
-</p>
+<div class="signup">
+  <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="signup-form">
+    <mat-form-field color="accent">
+      <input matInput type="text" placeholder="choose a username" formControlName="username" />
+    </mat-form-field>
+    <br />
+    <mat-form-field color="accent">
+      <input matInput type="text" placeholder="choose a password" formControlName="password" />
+    </mat-form-field>
+    <br />
+    <mat-form-field color="accent">
+      <input matInput type="password" placeholder="confirm password" disabled />
+    </mat-form-field>
+    <!-- <br />
+    <mat-form-field color="accent">
+      <input matInput type="email" placeholder="please provide your email" />
+    </mat-form-field> -->
+  </form>
+  <button mat-stroked-button color="accent" type="submit" class="signup-btn">
+    Signup
+  </button>
+</div>
