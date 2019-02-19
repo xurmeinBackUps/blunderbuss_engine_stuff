@@ -1,0 +1,16 @@
+.tarasque{
+    z-index: 3;
+    width: 50vw;
+}
+
+.bones{
+    position: relative;
+    z-index: 2;
+    width: 8vw;
+}
+
+.flesh{
+    position: relative;
+    z-index: 2;
+    width: 5vw;
+}

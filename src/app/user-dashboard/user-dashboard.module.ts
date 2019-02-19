@@ -9,18 +9,26 @@ import {
   MatButtonModule
 } from '@angular/material';
 
+
+import { UserDashboardRoutingModule } from './user-dashboard-routing.module';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
+  declarations: [
+    UserDashboardComponent, 
+    NavComponent
+  ],
   imports: [
     CommonModule,
+    UserDashboardRoutingModule,
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule
   ], 
-  declarations: [UserDashboardComponent],
   exports: [
-    UserDashboardComponent
+    UserDashboardComponent,
+    NavComponent
   ]
 })
 export class UserDashboardModule { }
