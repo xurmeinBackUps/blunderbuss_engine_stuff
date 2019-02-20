@@ -6,29 +6,39 @@ import {
 } from '@angular/forms';
 
 import {
-  MatButtonModule
+  MatButtonModule,
+  MatSidenavModule,
+  MatListModule,
+  MatToolbarModule,
+
 } from '@angular/material';
 
 
-import { UserDashboardRoutingModule } from './user-dashboard-routing.module';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { UserDashboardRoutingModule } from './user-dashboard-routing.module';
 import { NavComponent } from './nav/nav.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
-  declarations: [
-    UserDashboardComponent, 
-    NavComponent
-  ],
   imports: [
     CommonModule,
     UserDashboardRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSidenavModule,
+    MatListModule,
+    MatToolbarModule
   ], 
+  declarations: [
+    UserDashboardComponent, 
+    NavComponent,
+    LogoutComponent
+  ],
   exports: [
     UserDashboardComponent,
-    NavComponent
+    NavComponent,
+    LogoutComponent
   ]
 })
 export class UserDashboardModule { }
