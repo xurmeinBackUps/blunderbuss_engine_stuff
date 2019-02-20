@@ -12,8 +12,7 @@ const dashRoutes: Routes = [
     // children: [
     //   { path: '', component: }
     // ]
-  },
-  { path: '**', component: Page404Component }
+  }
 ];
 
 @NgModule({
