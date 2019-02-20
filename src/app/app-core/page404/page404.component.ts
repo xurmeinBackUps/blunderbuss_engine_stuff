@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-page404',
   templateUrl: './page404.component.html',
   styleUrls: ['./page404.component.css']
 })
-export class Page404Component implements OnInit {
+export class Page404Component {
 
-  constructor() { }
+  constructor(
+    private location: Location
+  ) { }
 
-  ngOnInit() {
+  goBack(): void {
+    this.location.back();
   }
 
 }
