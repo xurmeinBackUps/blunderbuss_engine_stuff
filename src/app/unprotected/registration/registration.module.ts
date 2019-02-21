@@ -23,8 +23,8 @@ import { LoginComponent } from './login/login.component';
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule, 
-    ReactiveFormsModule, 
+    FormsModule,
+    ReactiveFormsModule,
     MatCardModule,
     MatButtonModule,
     MatFormFieldModule,
@@ -33,17 +33,17 @@ import { LoginComponent } from './login/login.component';
     MatTabsModule
   ],
   declarations: [
-    SplashComponent, 
-    FormContainerComponent, 
-    FormSelectorComponent, 
-    SignUpComponent, 
+    SplashComponent,
+    FormContainerComponent,
+    FormSelectorComponent,
+    SignUpComponent,
     LoginComponent
   ],
   exports: [
-    SplashComponent, 
-    FormContainerComponent, 
-    FormSelectorComponent, 
-    SignUpComponent, 
+    SplashComponent,
+    FormContainerComponent,
+    FormSelectorComponent,
+    SignUpComponent,
     LoginComponent
   ]
 })

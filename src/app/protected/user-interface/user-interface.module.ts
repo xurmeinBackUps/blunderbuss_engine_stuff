@@ -1,5 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { 
+  MatButtonModule,
+  MatSidenavModule,
+  MatListModule,
+  MatToolbarModule,
+} from '@angular/material';
+
 import { UserNavModule } from './user-nav/user-nav.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LogoutComponent } from './logout/logout.component';
@@ -11,7 +19,11 @@ import { LogoutComponent } from './logout/logout.component';
   ],
   imports: [
     CommonModule,
-    UserNavModule
+    UserNavModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatListModule,
+    MatToolbarModule,
   ],
   exports: [
     DashboardComponent,
