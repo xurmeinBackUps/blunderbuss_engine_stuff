@@ -8,16 +8,23 @@ import { PcBuilderComponent } from './views/pc-builder/pc-builder/pc-builder.com
 import { DiceRollerComponent } from './views/dice-roller/dice-roller/dice-roller.component';
 import { SpellcardMakerComponent } from './views/spellcard-maker/spellcard-maker/spellcard-maker.component';
 import { SheetMakerComponent } from './views/sheet-maker/sheet-maker/sheet-maker.component';
+import { ViewsContainerComponent } from './views-container/views-container.component';
 
 const viewRoutes: Routes = [
-  { path: 'BonesOfTheTarrasque', component: BonesComponent },
-  { path: 'FleshOfTheTarrasque', component: FleshComponent },
-  { path: 'GroveOfTheTarrasque', component: GroveComponent },
-  { path: 'ScreenMaker', component: ScreenMakerComponent },
-  { path: '(n)pcMaker', component: PcBuilderComponent },
-  { path: 'dice_roller', component: DiceRollerComponent },
-  { path: 'SpellCardMaker', component: SpellcardMakerComponent },
-  { path: 'SheetMaker', component: SheetMakerComponent }
+  { 
+    path: '',
+    component: ViewsContainerComponent,
+    children: [
+      { path: 'BonesOfTheTarrasque', component: BonesComponent },
+      { path: 'FleshOfTheTarrasque', component: FleshComponent },
+      { path: 'GroveOfTheTarrasque', component: GroveComponent },
+      { path: 'ScreenMaker', component: ScreenMakerComponent },
+      { path: '(n)pcMaker', component: PcBuilderComponent },
+      { path: 'dice_roller', component: DiceRollerComponent },
+      { path: 'SpellCardMaker', component: SpellcardMakerComponent },
+      { path: 'SheetMaker', component: SheetMakerComponent }
+    ]
+  }
 ];
 
 @NgModule({

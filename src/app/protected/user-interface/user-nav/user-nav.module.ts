@@ -10,17 +10,21 @@ import {
 
 import { UserNavRoutingModule } from './user-nav-routing.module';
 import { NavComponent } from './nav/nav.component';
-import { BonesModule } from './views/bones/bones.module';
-import { DiceRollerModule } from './views/dice-roller/dice-roller.module';
-import { FleshModule } from './views/flesh/flesh.module';
-import { GroveModule } from './views/grove/grove.module';
-import { PcBuilderModule } from './views/pc-builder/pc-builder.module';
-import { SheetMakerModule } from './views/sheet-maker/sheet-maker.module';
-import { SpellcardMakerModule } from './views/spellcard-maker/spellcard-maker.module';
-import { ScreenMakerModule } from './views/screen-maker/screen-maker.module';
+import { BonesModule } from './views-container/views/bones/bones.module';
+import { DiceRollerModule } from './views-container/views/dice-roller/dice-roller.module';
+import { FleshModule } from './views-container/views/flesh/flesh.module';
+import { GroveModule } from './views-container/views/grove/grove.module';
+import { PcBuilderModule } from './views-container/views/pc-builder/pc-builder.module';
+import { SheetMakerModule } from './views-container/views/sheet-maker/sheet-maker.module';
+import { SpellcardMakerModule } from './views-container/views/spellcard-maker/spellcard-maker.module';
+import { ScreenMakerModule } from './views-container/views/screen-maker/screen-maker.module';
+import { ViewsContainerComponent } from './views-container/views-container.component';
 
 @NgModule({
-  declarations: [NavComponent],
+  declarations: [
+    NavComponent,
+    ViewsContainerComponent
+  ],
   imports: [
     CommonModule,
     BonesModule,
@@ -37,6 +41,9 @@ import { ScreenMakerModule } from './views/screen-maker/screen-maker.module';
     MatListModule,
     MatToolbarModule,
   ],
-  exports: [NavComponent]
+  exports: [
+    NavComponent,
+    ViewsContainerComponent
+  ]
 })
 export class UserNavModule { }
