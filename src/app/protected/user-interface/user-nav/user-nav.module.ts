@@ -17,6 +17,7 @@ import { GroveModule } from './views/grove/grove.module';
 import { PcBuilderModule } from './views/pc-builder/pc-builder.module';
 import { SheetMakerModule } from './views/sheet-maker/sheet-maker.module';
 import { SpellcardMakerModule } from './views/spellcard-maker/spellcard-maker.module';
+import { ScreenMakerModule } from './views/screen-maker/screen-maker.module';
 
 @NgModule({
   declarations: [NavComponent],
@@ -29,6 +30,7 @@ import { SpellcardMakerModule } from './views/spellcard-maker/spellcard-maker.mo
     PcBuilderModule,
     SheetMakerModule,
     SpellcardMakerModule,
+    ScreenMakerModule,
     UserNavRoutingModule,
     MatButtonModule,
     MatSidenavModule,
