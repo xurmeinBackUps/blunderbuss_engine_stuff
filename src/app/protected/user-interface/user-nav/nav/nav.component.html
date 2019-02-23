@@ -2,18 +2,18 @@
   <mat-drawer mode="side" opened>
     <mat-toolbar class="nav-title" color="primary">Systems</mat-toolbar>
     <mat-action-list dense>
-      <button class="nav-link" mat-list-item routerLink="/BonesOfTheTarrasque">Bones of the Tarrasque</button>
-      <button class="nav-link" mat-list-item routerLink="/FleshOfTheTarrasque">Flesh of the Tarrasque</button>
-      <button class="nav-link" mat-list-item routerLink="/GroveOfTheTarrasque">Grove of the Tarrasque</button>
-      <button class="nav-link" mat-list-item routerLink="/ScreenMaker">DM/GM Screen</button>
-      <button class="nav-link" mat-list-item routerLink="/(n)pcBuilder">Character Builder</button>
-      <button class="nav-link" mat-list-item routerLink="/dice_roller">Dice Roller</button>
-      <button class="nav-link" mat-list-item routerLink="/SpellCardMaker">Spell Card Maker</button>
-      <button class="nav-link" mat-list-item routerLink="/SheetMaker">Sheet Maker</button>
+      <button class="nav-link" mat-list-item routerLink="/dashboard/BonesOfTheTarrasque">Bones of the Tarrasque</button>
+      <button class="nav-link" mat-list-item routerLink="/dashboard/FleshOfTheTarrasque">Flesh of the Tarrasque</button>
+      <button class="nav-link" mat-list-item routerLink="/dashboard/GroveOfTheTarrasque">Grove of the Tarrasque</button>
+      <button class="nav-link" mat-list-item routerLink="/dashboard/ScreenMaker">DM/GM Screen</button>
+      <button class="nav-link" mat-list-item routerLink="/dashboard/npcBuilder">Character Builder</button>
+      <button class="nav-link" mat-list-item routerLink="/dashboard/dice_roller">Dice Roller</button>
+      <button class="nav-link" mat-list-item routerLink="/dashboard/SpellCardMaker">Spell Card Maker</button>
+      <button class="nav-link" mat-list-item routerLink="/dashboard/SheetMaker">Sheet Maker</button>
     </mat-action-list>
   </mat-drawer>
   <mat-drawer-content>
-    <router-outlet></router-outlet>
+    <app-views-container></app-views-container>
   </mat-drawer-content>
 </mat-drawer-container>
 
