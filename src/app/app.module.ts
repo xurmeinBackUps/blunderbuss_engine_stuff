@@ -12,6 +12,10 @@ import { Page404Component } from './app-core/page404/page404.component';
 import { UnprotectedModule } from './unprotected/unprotected.module';
 import { ProtectedModule } from './protected/protected.module';
 
+// to be removed once authorization & server implemented
+import { DevNavComponent } from './dev-nav/dev-nav.component';
+import { MatButtonModule } from '@angular/material';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -22,10 +26,14 @@ import { ProtectedModule } from './protected/protected.module';
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }),
+    //will remove later
+    MatButtonModule,
   ],
   declarations: [
     AppComponent,
-    Page404Component
+    Page404Component,
+    //will remove later
+    DevNavComponent
   ],
   bootstrap: [AppComponent]
 })
