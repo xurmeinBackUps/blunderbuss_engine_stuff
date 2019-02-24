@@ -1,7 +1,7 @@
 .exit{
     z-index: 10;
-    position: fixed;
-    top: 0.5em;
-    right: 0.5em;
+    position: absolute;
+    bottom: 1em;
+    left: 46px;
     font-family: "Roboto Slab";
 }
