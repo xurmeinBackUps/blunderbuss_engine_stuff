@@ -11,11 +11,13 @@ import {
 import { UserNavModule } from './user-nav/user-nav.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LogoutComponent } from './logout/logout.component';
+import { GridComponent } from './user-nav/views-container/views/bones/grid/grid.component';
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    LogoutComponent
+    LogoutComponent,
+    GridComponent
   ],
   imports: [
     CommonModule,
